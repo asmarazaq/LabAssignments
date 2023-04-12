@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Temp\\MVCWebFormLab1\\MVCWebFormLab\\MVCWebFormLab.csproj": {}
+    "C:\\Temp\\LabAssignments\\MVCWebFormLab1\\MVCWebFormLab\\MVCWebFormLab.csproj": {}
   },
   "projects": {
-    "C:\\Temp\\MVCWebFormLab1\\MVCWebFormLab\\MVCWebFormLab.csproj": {
+    "C:\\Temp\\LabAssignments\\MVCWebFormLab1\\MVCWebFormLab\\MVCWebFormLab.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Temp\\MVCWebFormLab1\\MVCWebFormLab\\MVCWebFormLab.csproj",
+        "projectUniqueName": "C:\\Temp\\LabAssignments\\MVCWebFormLab1\\MVCWebFormLab\\MVCWebFormLab.csproj",
         "projectName": "MVCWebFormLab",
-        "projectPath": "C:\\Temp\\MVCWebFormLab1\\MVCWebFormLab\\MVCWebFormLab.csproj",
+        "projectPath": "C:\\Temp\\LabAssignments\\MVCWebFormLab1\\MVCWebFormLab\\MVCWebFormLab.csproj",
         "packagesPath": "C:\\Users\\ARazaq\\.nuget\\packages\\",
-        "outputPath": "C:\\Temp\\MVCWebFormLab1\\MVCWebFormLab\\obj\\",
+        "outputPath": "C:\\Temp\\LabAssignments\\MVCWebFormLab1\\MVCWebFormLab\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ARazaq\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -46,11 +46,20 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }
