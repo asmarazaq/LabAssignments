@@ -1,0 +1,20 @@
+﻿@model Person
+
+<h2>Results</h2>
+
+<p>Your age: @Model.Age</p>
+<p>Your name: @Model.UserName</p>
+
+@if (Model.CanDrive)
+{
+    <p>This person can drive</p>
+}
+
+@if (Model.CanDrink)
+{
+    <h2>This person can drink</h2>
+}
+else
+{
+    <h1>This person is too young to drink</h1>
+}
