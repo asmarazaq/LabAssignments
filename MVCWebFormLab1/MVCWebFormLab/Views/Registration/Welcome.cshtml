@@ -1,0 +1,29 @@
+﻿@*model UserModel*@
+@model List<string>
+
+<p> Welcome to the Asma's Coffee shop </p>
+<p>What is your order, we have following items?</p>
+
+<h1>menuItems</h1>
+
+    @for (int i = 0; i < Model.Count; i++)
+    {
+        <p>@Model[i]</p>
+    }
+
+<h4>Click Here To Place your Order</h4>
+
+@*<table cellspacing="2px">
+
+    <tr>
+
+        <td>@Html.ActionLink("ThankYou","Registration")</td>
+
+    </tr>
+</table>*@
+
+<a asp-controller="Registration" asp-action="ThankYou">"Click Here For Your Order"</a>
+<div class="col-5">
+    <img style="width:90%; float:initial" src="/css/coffee.jpg" alt="Asma's' Coffee Shop" />
+</div>
+
