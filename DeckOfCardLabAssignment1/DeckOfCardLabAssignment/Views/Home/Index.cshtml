@@ -1,0 +1,39 @@
+﻿@model CardList
+
+<h1>Drawn Cards</h1>
+
+<div id="cards">
+    @Html.Partial("_Cards", Model)
+</div>
+
+<form asp-controller="Home" asp-action="DrawCards" method="post" role="form">
+    <div class="form-group">
+        <label asp-for="_deckId" hidden></label>
+        <input asp-for="_deckId" value="@Model._deckId" hidden />
+    </div>
+    <input type="submit" />
+</form>
+
+<button id="draw-cards-btn"  "@Model._deckId">Draw 5 More</button>
+
+@section scripts {
+    <script>
+        $(document).ready(function () {
+            $("#draw-cards-btn").click(function () {
+                var deckId = $(this).data("_deckId");
+
+                $.ajax({
+                    url: "/Cards/DrawCards?_deckId=" + _deckId,
+                    success: function (html) {
+                        $("#cards-container").append(html);
+                        $("#draw-cards-btn").data("_deckId", _deckId);
+                    }
+                });
+            });
+        });
+    </script>
+}
+
+
+
+}

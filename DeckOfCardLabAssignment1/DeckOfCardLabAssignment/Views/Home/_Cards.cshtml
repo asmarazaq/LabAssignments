@@ -1,0 +1,13 @@
+﻿@model CardList
+
+
+@if(Model != null)
+//list of cards , deckid as Model.
+@foreach (var card in Model.Cards)
+{
+    <div>
+        <img src="@card.Image" alt="@card.Value of @card.Suit" />
+        <h2>@card.Value of @card.Suit</h2>
+        <input type="checkbox" name="keep" value="@card.Image" /> Keep
+    </div>
+}
